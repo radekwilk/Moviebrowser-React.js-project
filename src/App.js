@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     if (searchText) {
       fetch(
-        `https://api.themoviedb.org/3/search/movie?api_key=2a80833d11c523750f923952e8e84068&language=en-US&query=${searchText}&page=1&include_adult=false`
+        `https://api.themoviedb.org/3/search/movie?api_key${searchText}&page=1&include_adult=false`
       )
         .then((response) => response.json())
         .then((data) => {
